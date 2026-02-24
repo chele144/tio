@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Blog del Tio de la Pachita</title>
+  <style>
+    :root {
+      --bg: #fff8ee;
+      --paper: #ffffff;
+      --ink: #1f1f24;
+      --muted: #5f6470;
+      --brand: #b45309;
+      --brand-dark: #7c2d12;
+      --line: #efd8bf;
+      --accent: #166534;
+      --shadow: 0 14px 36px rgba(73, 35, 12, 0.16);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 420px at 10% -5%, rgba(180, 83, 9, 0.18), transparent 60%),
+        radial-gradient(760px 380px at 100% 100%, rgba(22, 101, 52, 0.12), transparent 60%),
+        var(--bg);
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: min(960px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 248, 238, 0.88);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+    }
+
+    .brand {
+      margin: 0;
+      font-size: 1.08rem;
+      letter-spacing: 0.3px;
+      font-weight: 800;
+    }
+
+    .brand span { color: var(--brand); }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.3rem 0.7rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+      background: var(--paper);
+    }
+
+    .hero {
+      margin: 2rem 0 1.4rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 4px);
+      box-shadow: var(--shadow);
+      padding: clamp(1.2rem, 3vw, 2.1rem);
+      animation: fadeUp 0.7s ease both;
+    }
+
+    h1 {
+      margin: 0.3rem 0 0.4rem;
+      font-size: clamp(1.9rem, 4.4vw, 3rem);
+      line-height: 1.14;
+      color: var(--brand-dark);
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .block {
+      margin: 1.1rem 0;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.1rem;
+    }
+
+    h2 {
+      margin: 0 0 0.5rem;
+      color: var(--brand-dark);
+      font-size: 1.35rem;
+    }
+
+    p { margin: 0.45rem 0; }
+
+    ul {
+      margin: 0.4rem 0 0;
+      padding-left: 1.15rem;
+    }
+
+    li { margin: 0.45rem 0; }
+
+    blockquote {
+      margin: 0.8rem 0;
+      border-left: 4px solid var(--brand);
+      background: #fff4e6;
+      border-radius: 8px;
+      padding: 0.7rem 0.9rem;
+      color: #3b3025;
+      font-style: italic;
+    }
+
+    .image-space {
+      min-height: 360px;
+      border: 2px dashed #d8b38d;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 1rem;
+      background: linear-gradient(180deg, #fffaf2, #fff5e7);
+      color: #7b5d43;
+      font-weight: 600;
+    }
+
+    .end-line {
+      margin-top: 0.9rem;
+      padding: 0.7rem 0.9rem;
+      background: #f3fff6;
+      border: 1px solid #bee5c8;
+      border-radius: 10px;
+      color: #20442a;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    footer {
+      margin: 2rem 0 2.4rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <p class="brand">El Blog del <span>Tio de la Pachita</span></p>
+      <span class="tag">Historias del barrio</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="tag">🍻 Bienvenidos al mundo del Tio</p>
+      <h1>El Blog del Tio de la Pachita</h1>
+      <p class="subtitle">Un personaje que todos conocemos: el que dice "solo es una" y termina contando historias hasta las 3 de la manana.</p>
+    </section>
+
+    <section class="block">
+      <h2>🧢 ¿Quien es el Tio?</h2>
+      <p>El Tio es un personaje legendario:</p>
+      <ul>
+        <li>Experto catador de pachitas.</li>
+        <li>Fiel defensor del waro barato.</li>
+        <li>Amante eterno del cigarro.</li>
+        <li>Fan numero uno del "catrachito" bien frio.</li>
+        <li>Filosofo nocturno cuando ya lleva dos encima.</li>
+      </ul>
+      <p>Tiene historias que empiezan con: <strong>"En mis tiempos..."</strong></p>
+      <p>Y casi siempre terminan en una carcajada, o fondeado en una cuneta mirando las estrellas como si estuviera reflexionando sobre la vida.</p>
+    </section>
+
+    <section class="block">
+      <h2>🚬 Entre humo y reflexiones</h2>
+      <p>El Tio fuma como si estuviera compitiendo con una chimenea industrial. Dice que el humo le ayuda a pensar... aunque nadie sabe exactamente en que.</p>
+      <p>Entre trago y trago suelta frases profundas como:</p>
+      <blockquote>
+        <p>"La vida es corta, sobrino."</p>
+        <p>"Uno trabaja pa' vivir, no vive pa' trabajar."</p>
+        <p>"Otra y nos vamos."</p>
+      </blockquote>
+      <p><strong>(Spoiler: nunca se van despues de "la ultima").</strong></p>
+    </section>
+
+    <section class="block">
+      <h2>📸 Espacio para imagen</h2>
+      <!-- PROGRAMADOR: Dejar aqui un espacio grande para una imagen tipo caricatura del Tio con:
+           - Pachita en la mano
+           - Cigarro
+           - Sentado en una cuneta mirando el cielo
+           - Estilo ilustracion divertida, no realista -->
+      <div class="image-space" id="image-fallback" style="display:none;">
+        Aqui va una ilustracion grande del Tio:<br />
+        pachita en mano, cigarro y mirada al cielo desde la cuneta.
+      </div>
+      <img
+        src="./tio.jpg.jpeg"
+        alt="El Tio de la Pachita"
+        style="width:100%;max-width:560px;display:block;margin:0 auto;border-radius:14px;border:1px solid #d8b38d;box-shadow:0 10px 24px rgba(73,35,12,.2);"
+        onerror="this.style.display='none';document.getElementById('image-fallback').style.display='grid';"
+      />
+    </section>
+
+    <section class="block">
+      <h2>🎭 El lado humano del Tio</h2>
+      <p>Mas alla del waro y las pachitas, el Tio es ese personaje que:</p>
+      <ul>
+        <li>Siempre tiene un consejo raro pero sincero.</li>
+        <li>Te presta dinero aunque el ande corto.</li>
+        <li>Te defiende si alguien habla mal de vos.</li>
+        <li>Tiene buen corazon, aunque malas decisiones.</li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2>📝 Final del dia</h2>
+      <p>Este blog no celebra el exceso, celebra el personaje. El Tio es parte del folclore familiar. Un recordatorio de que todos tenemos luces y sombras.</p>
+      <p>Y aunque a veces termine fondeado en una cuneta, siempre se levanta al dia siguiente diciendo:</p>
+      <p class="end-line">"Hoy si ya no tomo."</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 El Blog del Tio de la Pachita
+  </footer>
+</body>
+</html>
+
